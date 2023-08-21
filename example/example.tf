@@ -8,7 +8,7 @@ locals {
     project_code = "ml"
     env          = "de"
     zone         = "in"
-    agency_code  = "mrl"
+    agency_code  = "boj"
     tier         = "pp"
   }
 
@@ -17,7 +17,7 @@ locals {
     project_code = "ml"
     env          = "de"
     zone         = "in"
-    agency_code  = "mrl"
+    agency_code  = "boj"
     tier         = "pp"
   }
 
@@ -26,14 +26,14 @@ locals {
     project_code = "ml"
     env          = "de"
     zone         = "in"
-    agency_code  = "mrl"
+    agency_code  = "boj"
     tier         = "pp"
   }
 
   tags = {
     createdBy = "Terraform"
-    project   = "Merlion"
-    Owner     = "Avanade"
+    project   = "bojtest"
+    Owner     = "boj"
   }
 
 }
