@@ -2,7 +2,7 @@ locals {
   diag_object = {
     "${var.naming_convention_info.name}" = {
       resource_id = [azurerm_kubernetes_cluster.aks_obj.id]
-      log         = var.diag_object.log
+      enabled_log = var.diag_object.enabled_log
       metric      = var.diag_object.metric
     }
   }
