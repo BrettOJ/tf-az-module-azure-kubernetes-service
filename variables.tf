@@ -293,7 +293,7 @@ variable "network_profile" {
     network_mode          = string # can only be set to bridge for existing Kubernetes Clusters and cannot be used to provision new Clusters
     network_policy        = string
     dns_service_ip        = string
-    docker_bridge_cidr    = string
+    #docker_bridge_cidr    = string
     ebpf_data_plane       = string # optional Possible value is cilium.
     network_plugin_mode   = string # Possible values are loadBalancer, userDefinedRouting, managedNATGateway and userAssignedNATGateway
     outbound_type         = string
@@ -324,7 +324,7 @@ variable "network_profile" {
     network_policy     = "calico"
     service_cidr       = "10.100.0.0/16"
     dns_service_ip     = "10.100.0.10"
-    docker_bridge_cidr = "172.17.0.1/16"
+    #docker_bridge_cidr = "172.17.0.1/16"
     # Specifies the SKU of the Load Balancer used for this Kubernetes Cluster. Use standard for when enable agent_pools availability_zones.
     load_balancer_sku = "standard"
     ebpf_data_plane = null 

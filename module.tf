@@ -195,7 +195,7 @@ resource "azurerm_kubernetes_cluster" "aks_obj" {
     pod_cidr           = var.network_profile.pod_cidr
     service_cidr       = var.network_profile.service_cidr
     dns_service_ip     = var.network_profile.dns_service_ip
-    docker_bridge_cidr = var.network_profile.docker_bridge_cidr
+    #docker_bridge_cidr = var.network_profile.docker_bridge_cidr
     load_balancer_sku  = var.network_profile.load_balancer_sku
     outbound_type      = var.network_profile.outbound_type
     dynamic "load_balancer_profile" {
