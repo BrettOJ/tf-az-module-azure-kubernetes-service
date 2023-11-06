@@ -343,7 +343,7 @@ variable "diag_object" {
   description = "contains the logs and metrics for diagnostics"
   type = object({
     log_analytics_workspace_id = string
-    enabled_log                        = list(tuple([string, bool, bool, number]))
+    enabled_log                = list(tuple([string, bool, bool, number]))
     metric                     = list(tuple([string, bool, bool, number]))
   })
 }
